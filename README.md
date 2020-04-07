@@ -8,6 +8,11 @@ Looking at a single frame, the mean pixel value of the bacteria is compared to t
 ## Results and Discussion
 From the histogram below, it's apparent that binary thresholding alone will not work to isolate the bacteria because the mean pixel value of the bacteria is within the boundaries of the range of common background pixel values. In other words, the bacteria gets "lost" in the background. 
 
+<img src="https://github.com/shoshireich/Image-Processing/blob/master/Figures/PixelValues.png" width="60%">
+
 Even though there are many objects in the image, the image has low resolution, and the bacteria are similar in pixel intensity to the background, somehow our brains are still able to find the bacteria in the video. This is possible because the bacteria move over time.
 Background subtraction allows for the creation of a "background" image composed of pixels whose values remain fairly constant over time.
 The information extracted from these processed images can be used effectively to plot the bacterial trajectories.
+
+<img src="https://github.com/shoshireich/Image-Processing/blob/master/Figures/BacteriaTrajectories.png" width="50%">
+
